@@ -14,7 +14,7 @@ void de(void)
                 a = 6;
             if (b == 0)
                 b = 6;
-            printf("alex = [%d] | teddy = [%d]\n", a, b);
+            printf("P1 = [%d] | P2 = [%d]\n", a, b);
             i = 0;
         }
         i++;
