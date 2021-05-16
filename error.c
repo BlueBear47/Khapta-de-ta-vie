@@ -26,3 +26,13 @@ int error_symbole(char *symbole)
     printf(YELLOW"ton symbole est pas bon le frère remet stp : "NORMAL);
     return (1);
 }
+
+int error_cycle(char *getline)
+{
+    for (int l = 0; getline[l] != '\n'; l++) {
+        if (getline[l] < 48 || getline[l] > 57) {
+            printf(YELLOW"c'est pas un nombre le frère remet stp : "NORMAL);
+            return (1);            }
+        }
+    return (0);
+}
